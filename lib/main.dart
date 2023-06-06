@@ -5,15 +5,14 @@ import 'screens/signup_screen.dart';
 import 'screens/chat_screen.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      initialRoute: 'splash',
-      routes: {
-        'splash' : (context) => SplashScreen(),
-        'login' : (context) => LoginScreen(),
-        'signup' : (context) => SignupScreen(),
-        'chat' : (context) => ChatScreen(),
-      },
-    )
-  );
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    initialRoute: 'signup',
+    routes: {
+      'splash': (context) => Splasher(),
+      'login': (context) => LoginScreen(),
+      'signup': (context) => SignupScreen(),
+      'chat': (context) => ChatScreen(),
+    },
+  ));
 }
